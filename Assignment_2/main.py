@@ -23,4 +23,4 @@ entr = -(norm_vals * np.log2(norm_vals)).sum()
 for symbol, count in dic.items():
     print("Symbol {0} appears in {1}% of times".format(symbol, round(count / symbols_amount * 100, 2)))
 
-print("Enthropy of text: {0}".format(entr))
+print("Entropy of text: {0}".format(entr))
