@@ -27,4 +27,4 @@ norm_vals = vals / symbols_amount
 
 entr = -(norm_vals * np.log2(norm_vals)).sum()
 
-print("Enthropy text: {0}".format(entr))
+print("Enthropy of text: {0}".format(entr))
