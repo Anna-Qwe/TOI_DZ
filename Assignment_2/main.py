@@ -16,3 +16,15 @@ dic = byte_reader('9VAR.txt')
 
 for symbol, count in dic.items():
     print("Symbol {0} appears {1} times".format(symbol, count))
+
+import numpy as np
+
+vals = np.array(list(dic.values()))
+
+symbols_amount = vals.sum()
+
+norm_vals = vals / symbols_amount
+
+entr = -(norm_vals * np.log2(norm_vals)).sum()
+
+print("Enthropy text: {0}".format(entr))
