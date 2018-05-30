@@ -48,4 +48,4 @@ norm_vals2 = vals2 / bytes_amount2
 entr1 = -(norm_vals1 * np.log2(norm_vals1)).sum()
 entr2 = -(norm_vals2 * np.log2(norm_vals1)).sum()
 
-print("Enthropy of BMP-file: {0}, enthropy of DOC-file: {1}".format(entr1, entr2))
+print("Entropy of BMP-file: {0}, entropy of DOC-file: {1}".format(entr1, entr2))
